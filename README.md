@@ -5,7 +5,7 @@
 * 프로젝트 명: 멀티모달을 활용한 유사도 기반 국내 관광 정보 검색 시스템(A similarity-based domestic tourism information search system using multimodal)
 * 기간: 2024.03.05 ~ 2024.05.20
 * 팀원 : 신재함, 이현수, 장서연, 한은경       
-<br>
+<br></br>
 ## 프로젝트 개요(Project Overview)
 1. 기존 서비스의 한계
   * 기존 관광지 검색 서비스는 대부분이 텍스트를 기반으로 검색 결과를 제공
