@@ -4,7 +4,7 @@
 ## Tacademy ASAC 4기 기업연계프로젝트
 * 프로젝트 명: 멀티모달을 활용한 유사도 기반 국내 관광 정보 검색 시스템(A similarity-based domestic tourism information search system using multimodal)
 * 기간: 2024.03.05 ~ 2024.05.20
-* 팀원 : 신재함, 이현수, 장서연, 한은경
+* 팀원 : 신재함, 이현수, 장서연, 한은경   
 
 ## 프로젝트 개요(Project Overview)
 1. 기존 서비스의 한계
@@ -14,10 +14,10 @@
 2. 프로젝트 목표
   * 양방향 검색을 통해 Text, Image를 자유롭게 입력값으로 활용가능하고,
   * 검색 결과 또한 Text, Image의 맥락을 고려한 검색 결과 가능한 시스템 개발
-  * 학습을 통해 학습되지 않은 해외 관광지와 유사도가 높은 국내 관광지 추론이 가능한 모델 완성
+  * 학습을 통해 학습되지 않은 해외 관광지와 유사도가 높은 국내 관광지 추론이 가능한 모델 완성   
 
 ## 데이터 (Data)
-* DACON 2022 관광데이터 AI 경진대회 train.csv (https://dacon.io/competitions/official/235978/data)
+* DACON 2022 관광데이터 AI 경진대회 train.csv (https://dacon.io/competitions/official/235978/data)   
 
 ## 프로젝트 진행단계
 멀티모달 기술을 활용한 프로젝트 진행
