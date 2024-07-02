@@ -19,8 +19,9 @@
 <br></br>
 
 ## 데이터 (Data)
-* DACON 2022 관광데이터 AI 경진대회 train.csv (<a/><a href="https://dacon.io/competitions/official/235978/data" target="_blank">)
-* ![image](https://github.com/newdatajaam/Domestic-Tourism-Search-System-with-Multimodal/assets/152856364/93684f16-2251-493b-a989-fc5e3ecd98d6)
+* [DACON 2022 관광데이터 AI 경진대회 train.csv](https://dacon.io/competitions/official/235978/data")
+  
+![image](https://github.com/newdatajaam/Domestic-Tourism-Search-System-with-Multimodal/assets/152856364/93684f16-2251-493b-a989-fc5e3ecd98d6)
 <br></br>
 
 ## 프로젝트 진행단계
