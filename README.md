@@ -1,5 +1,5 @@
 ## 멀티모달을 활용한 유사도 기반 국내 관광 정보 검색 시스템
-(마지막 수정 : 24.07.02)
+(마지막 수정 : 24.07.09)
 
 ## Tacademy ASAC 4기 기업연계프로젝트
 * 프로젝트 명: 멀티모달을 활용한 유사도 기반 국내 관광 정보 검색 시스템(A similarity-based domestic tourism information search system using multimodal)
@@ -36,19 +36,42 @@
 ## 모델 평가
 1. 텍스트 임베딩
    * 기존 Average Precision @K 평가 지표를 응용하여 유사도 기반 검색 결과의 검색 순위에 따라 가중치를 부여하여 정량적 평가 진행
-   * 코사인 유사도를 참고하여 질의에 대한 답변을 정성적으로 판단하여 평가
+   * 코사인 유사도를 참고하여 질의에 대한 답변을 정성적으로 판단하여 평가(Weighted Average Precision @K : AP@K)
 2. 이미지 임베딩
    * 이미지에 대한 라벨링을 기존 데이터 셋에 있는 카테고리 라벨링에 따라 분류 모델링 진행
    * 질의(query) 이미지에 대한 분류 예측에 대한 accuracy 평가 적용
    * 정성적인 이미지 유사도 평가
 3. 조인트 임베딩
-   * TEXT, Image 데이터가 한 공간에 투영되었는지 확인하기 위해 두 벡터 값의 코사인 유사도 ,유클리디안 유사도(유클리디안 거리) 활용하여 평가 진행
+   * TEXT, Image 데이터가 한 공간에 투영되었는지 확인하기 위해 두 벡터 값의 코사인 유사도, 유클리디안 유사도(유클리디안 거리) 활용하여 모델 평가 진행
    * 질의(Query)와 검색 결과간의 코사인 유사도를 통해 정성적 평가 적용
-   * 정성적 평가
+   * 질의(Query)에 대한 검색 결과 Label 일치도에 대한 Accuracy, 전체데이터에 대한 Weighted Precision 평가 진행
 <br></br>
 
 ## 결과
+### 결과1. 기술통계량 비교 결과 
+절대적 변화량 기준 
+  * 코사인 유사도: 0.7814 증가
+  * 유클리디안 유사도: 0.75424 증가
+![image](https://github.com/newdatajaam/Domestic-Tourism-Search-System-with-Multimodal/assets/152856364/2320691f-aba0-47bd-ab6a-047d5be78c4f)
 
+### 결과2. TSNE 벡터 시각화 결과
+기존 각 모달리티(텍스트, 이미지)의 벡터 분포도를 겹쳐서 확인한 결과
+![image](https://github.com/newdatajaam/Domestic-Tourism-Search-System-with-Multimodal/assets/152856364/9e330bf2-f6da-4975-b843-bef19905e899)
+
+### 결과3. 내부데이터 자체 query 평가(acc, weighted precision)
+모델별(텍스트, 이미지, 멀티모달(조인트)) 내부 데이터 검색 향상도 비교 결과
+- 평가기준
+    * Acc: Query Label과 상위 10개 검색 결과의 Label의 정확도
+    * Weighted Precision: Query Label과 상위 10개 검색 결과의 Label의 정밀도
+      (이때 가중치는 상위 결과일수록 높고 단계별로 내려감 / 결과1위 = 10/55, ..., 결과10위 = 1/55 등)
+- 결과
+
+   ![image](https://github.com/newdatajaam/Domestic-Tourism-Search-System-with-Multimodal/assets/152856364/62e8cc48-00e4-45e9-876f-f84322c0cd79)
+
+
+결과3 참고자료
+
+![image](https://github.com/newdatajaam/Domestic-Tourism-Search-System-with-Multimodal/assets/152856364/6d0dcf8a-d232-48e7-b024-6b51972a90bd)
 
 <br></br>
 
